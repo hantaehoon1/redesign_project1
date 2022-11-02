@@ -102,3 +102,6 @@ header {
   width: 100%;
   height: 500px;
 }
+.swiper_slide img {
+  width:1920px;
+}

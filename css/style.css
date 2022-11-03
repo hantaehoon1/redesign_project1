@@ -11,6 +11,10 @@ a {
 }
 header {
   width:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:99;
 }
 .con {
   width:100%;
@@ -38,6 +42,32 @@ header {
   padding:10px;
   justify-content: flex-end;
   border:3px solid blue;
+}
+.imgslide .swiper {
+  width:100%;
+  height:100vh;
+}
+
+.swiper_slide img:first-child {
+  width:100%;
+  height:100%;
+  object-fit:cover;
+
+}
+
+.swiper_slide img:nth-child(2) {
+  width:80%;
+  height:80%;
+  border-radius: 10px;
+  object-fit:cover;
+
+}
+
+.swiper_slide img:last-child {
+  width:80%;
+  height:80%;
+  object-fit:cover;
+
 }
 
 .banner_image {
@@ -102,6 +132,8 @@ header {
   width: 100%;
   height: 500px;
 }
-.swiper_slide img {
-  width:1920px;
+.swiper-slide img {
+  width:100%;
+  height:100%;
+  object-fit: center;
 }

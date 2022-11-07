@@ -29,7 +29,9 @@ header {
 }
 
 .logo{
+  white-space: nowrap;
   margin-left:25px;
+  padding:10px;
 }
 
 .wrap > div:first-child {
@@ -39,16 +41,26 @@ header {
 .wrap > div:last-child {
   flex:1 1 0%;
   display: flex;
-  padding:10px;
   justify-content: flex-end;
-  border:3px solid blue;
 }
+
+.banner_image {
+  display: flex;
+  align-items: center;
+}
+
+.phone_number {
+  display: flex;
+  align-items: center;
+  padding:10px;
+}
+
 *{
   box-sizing:border-box;
+  font-size:16px;
 }
 
 .imgslide {
-  border: 3px solid red;
   padding:30px 0 0 40px;
   transition:0.3s;
 }
@@ -58,40 +70,22 @@ header {
 }
 
 .imgslide .swiper {
-  width:100%;
+  width:1920px;
+  min-width: 100%;
   height:100vh;
   border:3px solid green;
   transition:0.3s;
   border-radius:50px 0 0 0;
 }
 
-
-.swiper_slide img:first-child {
-  width:100%;
-  height:100%;
-  object-fit:cover;
-
-}
-
-.swiper_slide img:nth-child(2) {
-  width:80%;
-  height:80%;
-  border-radius: 10px;
-  object-fit:cover;
-
-}
-
-.swiper_slide img:last-child {
-  width:80%;
-  height:80%;
-  object-fit:cover;
-
+.imgslide.first-slide-actived .swiper {
+  border-radius: 0;
+  border:3px solid blue;
 }
 
 .banner_image {
   margin-right: 25px;
   white-space: nowrap;
-  border: 3px solid red;
 }
 
 .phone_number {
@@ -104,12 +98,10 @@ header {
   justify-content: space-evenly;
   min-width: 900px;
   margin: 0 20px;
-  
 }
 .menu > li > a {
   display:block;
   padding:10px;
-  border:3px solid red;   
 }
 
 .card_title > h5 > span {
@@ -117,11 +109,20 @@ header {
 }
 .card_slide {
   display: flex;
+  justify-content: center;
+  /* height:480px; */
+  /* border:3px solid red; */
 }
+
+
 .cards_menu {
   display:flex;
 }
-
+.card_title {
+  white-space: nowrap;
+  background-color:#0E585A;
+  color:#ffffff;
+}
 .service_des {
   display:block;
 }

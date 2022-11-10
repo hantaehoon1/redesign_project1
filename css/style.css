@@ -15,6 +15,19 @@ a {
   text-decoration:none;
 }
 
+.top {
+  position:relative;
+}
+
+.top::before {
+  position:absolute;
+  top:0;
+  left:0;
+  width:28%;
+  height:100%;
+  background-color: #015152;
+}
+
 header {
   width:100%;
   position:absolute;
@@ -177,10 +190,18 @@ header {
   object-fit: center;
 }
 
-.location img{
+.location-img{
+  position: relative;
+  background:"https://www.prugio.com/ht/2022/anyang/web/img/main3-bg.jpg?ver=1";
+  background-size:cover;
   width:1920px;
   min-width: 100%;
   height: 500px;
   object-fit: cover;
   background-size: cover;
+  z-index: 1;
+}
+
+.map {
+  position:absolute;
 }

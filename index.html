@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 
-  <script src="javascript/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
@@ -16,24 +15,80 @@
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <script src="./javascript/script.js" defer></script>
+  <script src="javascript/jquery.min.js"></script>
+  <script src="javascript/script.js" defer rel="stylesheet"></script>
 </head>
 
 <body>
   <div class="top">
       <header>
         <div class="con">
-          <div class="wrap">
+          <div class="wrap topwrap">
             <div class="logo">
               <a href="">안양역푸르지오더샵</a>
             </div>
             <ul class="menu">
-              <li><a href="#">사업안내</a></li>
-              <li><a href="#">분양안내</a></li>
-              <li><a href="#">청약안내</a></li>
-              <li><a href="#">단지안내</a></li>
-              <li><a href="#">세대안내</a></li>
-              <li><a href="#">홍보센터</a></li>
+              <li>
+                <a href="#">사업안내</a>
+                <ul class="submenu">
+                  <li>
+                    <a href="#">사업개요</a>
+                    <a href="#">입지환경</a>
+                    <a href="#">지역조감VR</a>
+                    <a href="#">오시는길</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">분양안내</a>
+                <ul class="submenu">
+                  <li>
+                    <a href="#">분양일정</a>
+                    <a href="#">분양안내문</a>
+                    <a href="#">모집광고</a>
+                  </li>
+              </li>
+              <li>
+                <a href="#">청약안내</a>
+                <ul class="submenu">
+                  <li>
+                    <a href="#">청약자격안내문</a>
+                    <a href="#">특별공급</a>
+                    <a href="#">일반공급</a>
+                    <a href="#">주택청약체크리스트</a>
+                  </li>
+              </li>
+              <li>
+                <a href="#">단지안내</a>
+                <ul class="submenu">
+                  <li>
+                    <a href="#">단지설계</a>
+                    <a href="#">단지조경</a>
+                    <a href="#">커뮤니티</a>
+                    <a href="#">단지배치도</a>
+                    <a href="#">동호수배치도</a>
+                  </li>
+              </li>
+              <li>
+                <a href="#">세대안내</a>
+                <ul class="submenu">
+                  <li>
+                    <a href="#">평면안내</a>
+                    <a href="#">E모델하우스</a>
+                    <a href="#">인테리어</a>
+                    <a href="#">특화시스템</a>
+                  </li>
+              </li>
+              <li>
+                <a href="#">홍보센터</a>
+                <ul class="submenu">
+                  <li>
+                    <a href="#">홍보영상</a>
+                    <a href="#">언론보도</a>
+                    <a href="#">분양설문</a>
+                    <a href="#">관심고객등록</a>
+                  </li>
+              </li>
             </ul>
             <div class="header_wrap">
               <div class="banner_image">3월18일 OPEN</div>
@@ -45,12 +100,10 @@
           </div>
         </div>
       </header>
-      <!-- Slider main container -->
+     
       <div class="imgslide">
         <div class="swiper">
-          <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
-            <!-- Slides -->
             <div class="swiper-slide">
               <img src="https://www.prugio.com/ht/2022/anyang/web/img/vis4.jpg" alt="" />
             </div>
@@ -61,14 +114,9 @@
               <img src="https://www.prugio.com/ht/2022/anyang/web/img/vis2.jpg" alt="" />
             </div>
           </div>
-          <!-- If we need pagination -->
           <div class="swiper-pagination"></div>
-      
-          <!-- If we need navigation buttons -->
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
-      
-          <!-- If we need scrollbar -->
           <div class="swiper-scrollbar"></div>
         </div>
       </div>
@@ -182,37 +230,33 @@
         <ul>
           <li>
             <div class="map-img">
-              <img src="https://www.prugio.com/ht/2022/anyang/web/img/main3-map1.png?ver=1" alt="맵이미지1">
+              <img src="" alt="맵이미지1">
             </div>
             <div class="map-text">
-              <img src="https://www.prugio.com/ht/2022/anyang/web/img/main3-txt1.png" alt="맵텍스트1">
+              <img src="" alt="맵텍스트1">
             </div>
             <div class="map-btn">
-              <a
-                href="https://map.naver.com/v5/search/%EC%84%9C%EC%9A%B8%EC%8B%9C%20%EA%B8%88%EC%B2%9C%EA%B5%AC%20%EC%8B%9C%ED%9D%A5%EB%8F%99%20903-15/address/14126727.658250023,4502118.984610021,%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EA%B8%88%EC%B2%9C%EA%B5%AC%20%EC%8B%9C%ED%9D%A5%EB%8F%99%20903-15,jibun?c=14078620.1833312,4137429.6543027,19,0,0,2,dh">
-                <img src="https://www.prugio.com/ht/2022/anyang/web/img/main3-btn1.png?ver=1" alt="버튼1">
+              <a href="">
+                <img src="" alt="버튼1">
               </a>
-              <a
-                href="https://map.kakao.com/?map_type=TYPE_MAP&q=%EC%84%9C%EC%9A%B8+%EA%B8%88%EC%B2%9C%EA%B5%AC+%EC%8B%9C%ED%9D%A5%EB%8F%99+903-15&urlLevel=2&urlX=478446&urlY=1097585">
-                <img src="https://www.prugio.com/ht/2022/anyang/web/img/main3-btn2.png?ver=1" alt="버튼2">
+              <a href="">
+                <img src="" alt="버튼2">
               </a>
             </div>
           </li>
           <li>
             <div class="map-img">
-              <img src="https://www.prugio.com/ht/2022/anyang/web/img/main3-map2.png?ver=1" alt="맵이미지1">
+              <img src="" alt="맵이미지1">
             </div>
             <div>
-              <img src="https://www.prugio.com/ht/2022/anyang/web/img/main3-txt2.png" alt="맵텍스트1">
+              <img src="" alt="맵텍스트1">
             </div>
             <div class="map-btn">
-              <a
-                href="https://map.naver.com/v5/search/%EA%B2%BD%EA%B8%B0%EB%8F%84%20%EC%95%88%EC%96%91%EC%8B%9C%20%EB%A7%8C%EC%95%88%EA%B5%AC%20%EC%95%88%EC%96%91%EB%8F%99%2097-3/address/14129516.211494397,4494812.310995823,%EA%B2%BD%EA%B8%B0%EB%8F%84%20%EC%95%88%EC%96%91%EC%8B%9C%20%EB%A7%8C%EC%95%88%EA%B5%AC%20%EC%95%88%EC%96%91%EB%8F%99%2097-3,jibun?c=14129071.1392379,4494802.5145430,16,0,0,2,dh&isCorrectAnswer=true">
-                <img src="https://www.prugio.com/ht/2022/anyang/web/img/main3-btn1.png?ver=1" alt="버튼1">
+              <a href="">
+                <img src="" alt="버튼1">
               </a>
-              <a
-                href="https://map.kakao.com/?map_type=TYPE_MAP&q=%EA%B2%BD%EA%B8%B0+%EC%95%88%EC%96%91%EC%8B%9C+%EB%A7%8C%EC%95%88%EA%B5%AC+%EC%95%88%EC%96%91%EB%8F%99+97-3&urlLevel=2&urlX=483971&urlY=1083128">
-                <img src="https://www.prugio.com/ht/2022/anyang/web/img/main3-btn2.png?ver=1" alt="버튼2">
+              <a href="">
+                <img src="" alt="버튼2">
               </a>
             </div>
           </li>

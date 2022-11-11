@@ -1,3 +1,9 @@
+jQuery(document).ready(function(){
+  $('.menu>li').mouseover(function(){
+    $(this).find('.submenu').stop().slideDown(500);
+  })
+})
+
 function Imgslide1_init(){
   const swiper = new Swiper(".imgslide .swiper", {
     // Optional parameters
